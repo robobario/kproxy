@@ -1,0 +1,8 @@
+on: push
+    
+jobs:
+  dumpevent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo event
+        run: cat $GITHUB_EVENT_PATH
